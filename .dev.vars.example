@@ -1,0 +1,17 @@
+# Copy this file to .dev.vars (git-ignored) for local development:
+#   cp .dev.vars.example .dev.vars
+#
+# In production, set these in the Cloudflare dashboard instead:
+#   Workers & Pages → your Worker → Settings → Variables and Secrets
+
+# Muse API endpoint: base URL (…/v1) or full chat-completions URL.
+MUSE_API_ENDPOINT=http://127.0.0.1:8788/v1
+
+# Secret API key — never commit the real one.
+MUSE_API_KEY=test-key-123
+
+# Optional: model name (defaults to muse-spark-1.3 via wrangler.jsonc).
+MUSE_MODEL=muse-spark-1.3
+
+# Optional: system prompt prepended to every conversation.
+# SYSTEM_PROMPT=You are a helpful assistant. Answer concisely.

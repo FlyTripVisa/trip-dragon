@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "muse-chat",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-24",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"]
+  },
+  "vars": {
+    "MUSE_API_ENDPOINT": "https://api.meta.ai/v1",
+    "MUSE_MODEL": "muse-spark-1.3"
+  }
+}

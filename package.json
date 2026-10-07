@@ -1,0 +1,16 @@
+{
+  "name": "muse-chat",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A modern, streaming AI chat UI on Cloudflare Workers. Your Muse API key never touches the browser.",
+  "scripts": {
+    "dev": "wrangler dev",
+    "mock": "node scripts/mock-server.mjs",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
